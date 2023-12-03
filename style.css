@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    background-color: #c8e8e7;
+    font-family: 'Gabarito', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 3rem;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 35rem;
+    width: 75rem;
+    padding: 3rem 1rem;
+    background-color: white;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.item{
+    text-align: center;
+}
+
+span{
+    color: #341c7a;
+    font-size: 2.3rem !important;
+}
+
+p{
+    color: grey;
+}
+
+.form-box{
+    padding: 2rem 3rem;
+}
+
+.form-box h1{
+    margin-bottom: 1rem;
+    color: #341c7a;
+}
+
+.form-box p{
+    margin-bottom: 0.5rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: none;
+    background-color: rgba(173, 216, 230, 0.2);
+    border-radius: 10px;
+}
+
+form textarea{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    resize: none;
+    border: none;
+    background-color: rgba(173, 216, 230, 0.2);
+    border-radius: 10px;
+}
+
+form input[type="submit"]{
+    width: 6rem;
+    height: 3rem;
+    background-color: #341c7a;
+    color: white;
+    border-radius: 10px;
+}
+
+@media screen and (max-width : 768px) {
+    body{
+        height: auto;
+    }
+    .container{
+        flex-direction: column-reverse;
+        width: 90%;
+        height: auto;
+    }
+    .contact{
+        padding: 1rem;
+    }
+    span{
+        font-size: 1.8rem !important;
+    }
+    form input[type="submit"] {
+        width: 100%;
+    }
+    hr{
+        display: none;
+    }
+}
+
+@media screen and (max-width : 480px) {
+    body{
+        padding: 1rem;
+    }
+    .container{
+        width: 100%;
+    }
+    .form-box{
+        padding: 1rem;
+    }
+    .form-box h1{
+        font-size: 1.5rem;
+    }
+    form input,
+    form textarea {
+        padding: 0.8rem; 
+    }
+    form input[type="submit"] {
+        width: 100%;
+    }
+    hr{
+        display: none;
+    }
+}
